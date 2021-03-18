@@ -13,13 +13,7 @@ const caesarModule = (function() {
         let result = "";
         //ENCODING SECTION
         if (encode) {
-            for (let i = 0; i < input.length; i++) {
-                const letter = input[i].toLowerCase();
-                const alphabetIndex = alphabet.indexOf(letter);
-                //skips over special characters and spaces
-                if (alphabetIndex === -1) {
-                    result += letter;
-                    continue;
+         
                 }
                 //if the shift is a positive number it will increase the index by the shift number and if it goes over it will be the remainder of 26
                 if (shift > 0) {
